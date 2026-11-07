@@ -2,21 +2,56 @@ nav {
     background-color: darkblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
-    padding: 20px
+    padding: 20px;
 }
+
 h1 {
     color: darkblue;
 }
-img {
+
+/* Limita a largura do conteúdo principal */
+main {
+    max-width: 840px;
+}
+
+/* Aplica o tamanho de 150px apenas à foto de perfil em main */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p{
-    padding: 10px;
+
+/* Zera o padding padrão dos parágrafos */
+p {
+    padding: 0;
+}
+
+/* Estilização do quadro lateral/aside */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Define a largura da imagem do Paraná para 200px */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Rodapé com separador e alinhamento centrado */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
