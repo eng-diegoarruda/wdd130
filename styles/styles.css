@@ -1,9 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --text-light: white;
     --text-dark: #333;
-    --bg-aside: #eee;
-    --border-color: rgb(0 0 0 / 0.2);
     --border-black: 1px solid #000;
 }
 
@@ -20,6 +24,7 @@ nav a {
 
 h1 {
     color: var(--primary-color);
+    margin: 1rem 0;
 }
 
 main {
@@ -32,29 +37,60 @@ main img {
     border: var(--border-black);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
     padding: 0;
+    line-height: 1.5;
+}
+
+/* Lista de templos */
+ul.box {
+    list-style-position: inside;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-    background-color: var(--bg-aside);
-    color: var(--text-dark);
+    position: relative;
     text-align: center;
+    clear: both;
+}
+
+aside h2 {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    white-space: nowrap;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 2rem;
     border-top: var(--border-black);
     text-align: center;
+    padding: 1rem 0;
+    clear: both;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem 0;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+    clear: both; /* Força a caixa a descer e começar abaixo da foto flutuada */
 }
