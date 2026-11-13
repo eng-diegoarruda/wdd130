@@ -18,6 +18,11 @@ body {
     color: var(--accent1-color);
 }
 
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -41,7 +46,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 h1, h2 {
