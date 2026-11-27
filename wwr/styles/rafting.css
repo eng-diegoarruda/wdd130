@@ -23,7 +23,6 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* Header com CSS Grid e Nav com CSS Flex */
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -67,7 +66,6 @@ p, section, article {
     padding: 8px;
 }
 
-/* Hero Section & Overlays */
 .hero {
     position: relative;
 }
@@ -111,7 +109,6 @@ p, section, article {
     border: 1px solid var(--accent1-color);
 }
 
-/* Seção History em 3 colunas (Texto - Imagem - Texto) */
 .history {
     display: grid;
     grid-template-columns: 1fr 220px 1fr;
@@ -139,7 +136,6 @@ p, section, article {
     border: 1px solid var(--accent1-color);
 }
 
-/* Seção Adventures com 5 imagens lado a lado */
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -173,7 +169,185 @@ p, section, article {
     color: var(--accent1-color);
 }
 
-/* Footer com ícones sociais à direita */
+.contact-header {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.contact-header p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+    padding: 16px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 6px;
+    display: block;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background-color: #f4f6f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-form label,
+.contact-form legend {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: var(--accent1-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.radio-group {
+    border: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    align-items: start;
+    gap: 10px;
+}
+
+.radio-group legend {
+    float: left;
+    padding-top: 2px;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-options label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-row label {
+    font-weight: normal;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-color);
+}
+
+.contact-form button[type="submit"] {
+    background-color: #055a05;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover,
+.contact-form button[type="submit"]:focus-visible {
+    background-color: #264653;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 16px;
+}
+
+.employees h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.employees figure {
+    margin: 0;
+    text-align: center;
+}
+
+.employees img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 6px;
+    border: 1px solid var(--accent1-color);
+    display: block;
+}
+
+.employees figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr auto;
